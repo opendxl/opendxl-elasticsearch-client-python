@@ -29,7 +29,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = "OpenDXL Elasticsearch Client"
+project = "Elasticsearch API DXL Python Client Library"
 copyright = "Copyright 2017, McAfee LLC"
 
 # The version info for the project you're documenting, acts as replacement for

@@ -1,4 +1,4 @@
-# OpenDXL Elasticsearch Client
+# Elasticsearch API DXL Python Client Library
 
 ## Overview
 

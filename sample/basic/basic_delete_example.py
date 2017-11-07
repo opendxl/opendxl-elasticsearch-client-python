@@ -2,7 +2,6 @@ import os
 import sys
 
 from elasticsearch.exceptions import NotFoundError
-
 from dxlbootstrap.util import MessageUtils
 from dxlclient.client_config import DxlClientConfig
 from dxlclient.client import DxlClient
@@ -39,7 +38,7 @@ with DxlClient(config) as dxl_client:
     client = ElasticsearchClient(dxl_client)
 
     try:
-        # Invoke the example method
+        # Invoke the delete method
         resp_dict = client.delete(
             index=DOCUMENT_INDEX,
             doc_type=DOCUMENT_TYPE,
@@ -47,7 +46,7 @@ with DxlClient(config) as dxl_client:
 
         # Print out the response (convert dictionary to JSON for pretty
         # printing)
-        print "Response from delete:\n{0}".format(
-            MessageUtils.dict_to_json(resp_dict, pretty_print=True))
+        print("Response from delete:\n{0}".format(
+            MessageUtils.dict_to_json(resp_dict, pretty_print=True)))
     except NotFoundError:
-        print "Requested document was not found on the server"
+        print("Requested document was not found on the server")
