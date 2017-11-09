@@ -1,0 +1,7 @@
+dxlelasticsearchclient\.client module
+=====================================
+
+.. automodule:: dxlelasticsearchclient.client
+    :members:
+    :undoc-members:
+    :show-inheritance:

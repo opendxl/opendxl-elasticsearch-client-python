@@ -1,0 +1,17 @@
+dxlelasticsearchclient package
+==============================
+
+Submodules
+----------
+
+.. toctree::
+
+   dxlelasticsearchclient.client
+
+Module contents
+---------------
+
+.. automodule:: dxlelasticsearchclient
+    :members:
+    :undoc-members:
+    :show-inheritance:
