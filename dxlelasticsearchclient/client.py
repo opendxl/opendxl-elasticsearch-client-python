@@ -55,8 +55,8 @@ class ElasticsearchClient(Client):
     def delete(self, index, doc_type, id, **kwargs):
         """
         Deletes a typed JSON document from a specific index based on its id.
-        See the `Elasticsearch Python API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.delete>`__
-        and `Elasticsearch REST API <https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-delete.html>`__
+        See the `Elasticsearch Python Delete API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.delete>`__
+        and `Elasticsearch REST Delete API <https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-delete.html>`__
         documentation for more information on the full set of available
         parameters and data format.
 
@@ -79,8 +79,8 @@ class ElasticsearchClient(Client):
     def get(self, index, doc_type, id, **kwargs):
         """
         Gets a typed JSON document from a specific index based on its id.
-        See the `Elasticsearch Python API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.get>`__
-        and `Elasticsearch REST API <https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-get.html>`__
+        See the `Elasticsearch Python Get API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.get>`__
+        and `Elasticsearch REST Get API <https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-get.html>`__
         documentation for more information on the full set of available
         parameters and data format.
 
@@ -103,8 +103,8 @@ class ElasticsearchClient(Client):
     def index(self, index, doc_type, body, id=None, **kwargs):
         """
         Adds or updates a typed JSON document from a specific index based on
-        its id. See the `Elasticsearch Python API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.index>`__
-        and `Elasticsearch REST API <https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html>`__
+        its id. See the `Elasticsearch Python Index API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.index>`__
+        and `Elasticsearch REST Index API <https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-index_.html>`__
         documentation for more information on the full set of available
         parameters and data format.
 
@@ -129,8 +129,8 @@ class ElasticsearchClient(Client):
     def update(self, index, doc_type, id, body=None, **kwargs):
         """
         Update a document based on a script or partial data provided. See the
-        `Elasticsearch Python API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.update>`__
-        and `Elasticsearch REST API <https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html>`__
+        `Elasticsearch Python Update API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.update>`__
+        and `Elasticsearch REST Update API <https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html>`__
         documentation for more information on the full set of available
         parameters and data format.
 
