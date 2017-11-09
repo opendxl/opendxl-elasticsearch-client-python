@@ -10,6 +10,9 @@ Prerequisites
 * The OpenDXL Python Client prerequisites must be satisfied
    `<https://opendxl.github.io/opendxl-client-python/pydoc/installation.html>`_
 
+* The Elasticsearch DXL service is running and available on the DXL fabric
+    `<https://github.com/opendxl/opendxl-elasticsearch-service-python>`_
+
 Installation
 ************
 

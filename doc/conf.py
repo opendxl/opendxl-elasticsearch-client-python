@@ -30,7 +30,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = "Elasticsearch API DXL Python Client Library"
-copyright = "Copyright 2017, McAfee LLC"
+copyright = "2017, McAfee LLC"
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
