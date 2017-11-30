@@ -211,11 +211,16 @@ class ElasticsearchClient(Client):
         :return: Results of the service invocation.
         :rtype: dict
         """
+        if self._elasticsearch_service_unique_id:
+            request_service_id = "/{}".format(
+                self._elasticsearch_service_unique_id)
+        else:
+            request_service_id = ""
+
         # Create the DXL request message.
         request = Request("{}{}/{}".format(
             self._SERVICE_TYPE,
-            "/{}".format(self._elasticsearch_service_unique_id)
-            if self._elasticsearch_service_unique_id else "",
+            request_service_id,
             request_method))
 
         # Set the payload on the request message (Python dictionary to JSON
