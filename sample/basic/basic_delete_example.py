@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from __future__ import print_function
 import os
 import sys
 
@@ -46,7 +48,7 @@ with DxlClient(config) as dxl_client:
 
         # Print out the response (convert dictionary to JSON for pretty
         # printing)
-        print("Response from delete:\n{0}".format(
-            MessageUtils.dict_to_json(resp_dict, pretty_print=True)))
+        print(("Response from delete:\n{0}".format(
+            MessageUtils.dict_to_json(resp_dict, pretty_print=True))))
     except NotFoundError:
         print("Requested document was not found on the server")
