@@ -4,28 +4,19 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>dxlelasticsearchclient.client module &#8212; Elasticsearch API DXL Python Client Library 0.1.0 documentation</title>
+    <title>dxlelasticsearchclient.client module &#8212; Elasticsearch API DXL Python Client Library 0.2.0 documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="dxlelasticsearchclient package" href="dxlelasticsearchclient.html" /> 
-  </head>
-  <body>
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -38,7 +29,7 @@
         <li class="right" >
           <a href="dxlelasticsearchclient.html" title="dxlelasticsearchclient package"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Elasticsearch API DXL Python Client Library 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Elasticsearch API DXL Python Client Library 0.2.0 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="dxlelasticsearchclient.html" accesskey="U">dxlelasticsearchclient package</a> &#187;</li> 
       </ul>
     </div>  
@@ -53,17 +44,17 @@
 <dl class="class">
 <dt id="dxlelasticsearchclient.client.ElasticsearchClient">
 <em class="property">class </em><code class="descclassname">dxlelasticsearchclient.client.</code><code class="descname">ElasticsearchClient</code><span class="sig-paren">(</span><em>dxl_client</em>, <em>elasticsearch_service_unique_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#dxlelasticsearchclient.client.ElasticsearchClient" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">dxlbootstrap.client.Client</span></code></p>
-<p>The “Elasticsearch DXL Python Client Library” client wrapper class.</p>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dxlbootstrap.client.Client</span></code></p>
+<p>The &quot;Elasticsearch DXL Python Client Library&quot; client wrapper class.</p>
 <p>Constructor parameters:</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>dxl_client</strong> (<em>dxlclient.client.DxlClient</em>) – The DXL client to use for
+<li><strong>dxl_client</strong> (<em>dxlclient.client.DxlClient</em>) -- The DXL client to use for
 communication with the fabric.</li>
-<li><strong>elasticsearch_service_unique_id</strong> (<em>str</em>) – Unique id to use as part
+<li><strong>elasticsearch_service_unique_id</strong> (<em>str</em>) -- Unique id to use as part
 of the request topic names for the Elasticsearch DXL service.</li>
 </ul>
 </td>
@@ -83,10 +74,10 @@ parameters and data format.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>index</strong> (<em>str</em>) – Name of the index.</li>
-<li><strong>doc_type</strong> (<em>str</em>) – Type of the document.</li>
-<li><strong>id</strong> (<em>str</em>) – ID of the document.</li>
-<li><strong>kwargs</strong> (<em>dict</em>) – Dictionary of additional parameters to pass along
+<li><strong>index</strong> (<em>str</em>) -- Name of the index.</li>
+<li><strong>doc_type</strong> (<em>str</em>) -- Type of the document.</li>
+<li><strong>id</strong> (<em>str</em>) -- ID of the document.</li>
+<li><strong>kwargs</strong> (<em>dict</em>) -- Dictionary of additional parameters to pass along
 to the Elasticsearch Python API.</li>
 </ul>
 </td>
@@ -97,7 +88,7 @@ to the Elasticsearch Python API.</li>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">dict</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>elasticsearch.exceptions.NotFoundError</strong> – If the document cannot
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>elasticsearch.exceptions.NotFoundError</strong> -- If the document cannot
 be found.</p>
 </td>
 </tr>
@@ -118,10 +109,10 @@ parameters and data format.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>index</strong> (<em>str</em>) – Name of the index.</li>
-<li><strong>doc_type</strong> (<em>str</em>) – Type of the document.</li>
-<li><strong>id</strong> (<em>str</em>) – ID of the document.</li>
-<li><strong>kwargs</strong> (<em>dict</em>) – Dictionary of additional parameters to pass along
+<li><strong>index</strong> (<em>str</em>) -- Name of the index.</li>
+<li><strong>doc_type</strong> (<em>str</em>) -- Type of the document.</li>
+<li><strong>id</strong> (<em>str</em>) -- ID of the document.</li>
+<li><strong>kwargs</strong> (<em>dict</em>) -- Dictionary of additional parameters to pass along
 to the Elasticsearch Python API.</li>
 </ul>
 </td>
@@ -132,7 +123,7 @@ to the Elasticsearch Python API.</li>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">dict</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>elasticsearch.exceptions.NotFoundError</strong> – If the document cannot
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>elasticsearch.exceptions.NotFoundError</strong> -- If the document cannot
 be found.</p>
 </td>
 </tr>
@@ -153,11 +144,11 @@ parameters and data format.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>index</strong> (<em>str</em>) – Name of the index.</li>
-<li><strong>doc_type</strong> (<em>str</em>) – Type of the document.</li>
-<li><strong>body</strong> (<em>dict</em>) – The document.</li>
-<li><strong>id</strong> (<em>str</em>) – ID of the document.</li>
-<li><strong>kwargs</strong> (<em>dict</em>) – Dictionary of additional parameters to pass along
+<li><strong>index</strong> (<em>str</em>) -- Name of the index.</li>
+<li><strong>doc_type</strong> (<em>str</em>) -- Type of the document.</li>
+<li><strong>body</strong> (<em>dict</em>) -- The document.</li>
+<li><strong>id</strong> (<em>str</em>) -- ID of the document.</li>
+<li><strong>kwargs</strong> (<em>dict</em>) -- Dictionary of additional parameters to pass along
 to the Elasticsearch Python API.</li>
 </ul>
 </td>
@@ -168,7 +159,7 @@ to the Elasticsearch Python API.</li>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">dict</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>elasticsearch.exceptions.NotFoundError</strong> – If the document cannot
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>elasticsearch.exceptions.NotFoundError</strong> -- If the document cannot
 be found.</p>
 </td>
 </tr>
@@ -189,12 +180,12 @@ parameters and data format.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>index</strong> (<em>str</em>) – Name of the index.</li>
-<li><strong>doc_type</strong> (<em>str</em>) – Type of the document.</li>
-<li><strong>id</strong> (<em>str</em>) – ID of the document.</li>
-<li><strong>body</strong> (<em>dict</em>) – The request definition using either script or partial
+<li><strong>index</strong> (<em>str</em>) -- Name of the index.</li>
+<li><strong>doc_type</strong> (<em>str</em>) -- Type of the document.</li>
+<li><strong>id</strong> (<em>str</em>) -- ID of the document.</li>
+<li><strong>body</strong> (<em>dict</em>) -- The request definition using either script or partial
 doc.</li>
-<li><strong>kwargs</strong> (<em>dict</em>) – Dictionary of additional parameters to pass along
+<li><strong>kwargs</strong> (<em>dict</em>) -- Dictionary of additional parameters to pass along
 to the Elasticsearch Python API.</li>
 </ul>
 </td>
@@ -205,7 +196,7 @@ to the Elasticsearch Python API.</li>
 <tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first">dict</p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>elasticsearch.exceptions.NotFoundError</strong> – If the document cannot
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><strong>elasticsearch.exceptions.NotFoundError</strong> -- If the document cannot
 be found.</p>
 </td>
 </tr>
@@ -235,12 +226,14 @@ be found.</p>
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -259,13 +252,13 @@ be found.</p>
         <li class="right" >
           <a href="dxlelasticsearchclient.html" title="dxlelasticsearchclient package"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Elasticsearch API DXL Python Client Library 0.1.0 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Elasticsearch API DXL Python Client Library 0.2.0 documentation</a> &#187;</li>
           <li class="nav-item nav-item-1"><a href="dxlelasticsearchclient.html" >dxlelasticsearchclient package</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2017, McAfee LLC.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+        &#169; Copyright 2018, McAfee LLC.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
     </div>
   </body>
 </html>

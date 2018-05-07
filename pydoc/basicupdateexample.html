@@ -4,20 +4,12 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Basic Update Example &#8212; Elasticsearch API DXL Python Client Library 0.1.0 documentation</title>
+    <title>Basic Update Example &#8212; Elasticsearch API DXL Python Client Library 0.2.0 documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '0.1.0',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true,
-        SOURCELINK_SUFFIX: '.txt'
-      };
-    </script>
+    <script type="text/javascript" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
@@ -25,8 +17,7 @@
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Basic Delete Example" href="basicdeleteexample.html" />
     <link rel="prev" title="Basic Index Example" href="basicindexexample.html" /> 
-  </head>
-  <body>
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
@@ -42,7 +33,7 @@
         <li class="right" >
           <a href="basicindexexample.html" title="Basic Index Example"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Elasticsearch API DXL Python Client Library 0.1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Elasticsearch API DXL Python Client Library 0.2.0 documentation</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -54,10 +45,10 @@
   <div class="section" id="basic-update-example">
 <h1>Basic Update Example<a class="headerlink" href="#basic-update-example" title="Permalink to this headline">¶</a></h1>
 <p>This sample updates a document to an Elasticsearch server via the Elasticsearch
-<code class="docutils literal"><span class="pre">Update</span></code> API. The sample then retrieves the contents of the updated document
-via a call to the Elasticsearch <code class="docutils literal"><span class="pre">Get</span></code> API. The sample displays the results of
-the <code class="docutils literal"><span class="pre">Update</span></code> and <code class="docutils literal"><span class="pre">Get</span></code> calls.</p>
-<p>For more information on the Elasticsearch <code class="docutils literal"><span class="pre">Update</span></code> API, see the
+<code class="docutils literal notranslate"><span class="pre">Update</span></code> API. The sample then retrieves the contents of the updated document
+via a call to the Elasticsearch <code class="docutils literal notranslate"><span class="pre">Get</span></code> API. The sample displays the results of
+the <code class="docutils literal notranslate"><span class="pre">Update</span></code> and <code class="docutils literal notranslate"><span class="pre">Get</span></code> calls.</p>
+<p>For more information on the Elasticsearch <code class="docutils literal notranslate"><span class="pre">Update</span></code> API, see the
 <a class="reference external" href="https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.update">Elasticsearch Python Update API</a>
 and <a class="reference external" href="https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-update.html">Elasticsearch REST Update API</a>
 documentation.</p>
@@ -69,11 +60,11 @@ documentation.</p>
 <li><p class="first">The Elasticsearch API DXL service is running (see
 <a class="reference external" href="https://github.com/opendxl/opendxl-elasticsearch-service-python">Elasticsearch DXL Service</a>).</p>
 </li>
-<li><p class="first">In order to enable the use of the <code class="docutils literal"><span class="pre">update</span></code> and <code class="docutils literal"><span class="pre">get</span></code> APIs, both API names
-need to be listed in the <code class="docutils literal"><span class="pre">apiNames</span></code> setting under the <code class="docutils literal"><span class="pre">[General]</span></code> section
-in the “dxlelasticsearchservice.config” file that the service uses:</p>
+<li><p class="first">In order to enable the use of the <code class="docutils literal notranslate"><span class="pre">update</span></code> and <code class="docutils literal notranslate"><span class="pre">get</span></code> APIs, both API names
+need to be listed in the <code class="docutils literal notranslate"><span class="pre">apiNames</span></code> setting under the <code class="docutils literal notranslate"><span class="pre">[General]</span></code> section
+in the &quot;dxlelasticsearchservice.config&quot; file that the service uses:</p>
 <blockquote>
-<div><div class="highlight-ini"><div class="highlight"><pre><span></span><span class="k">[General]</span>
+<div><div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[General]</span>
 <span class="na">apiNames</span><span class="o">=</span><span class="s">update,get,...</span>
 </pre></div>
 </div>
@@ -89,17 +80,17 @@ document.</p>
 </div>
 <div class="section" id="running">
 <h2>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h2>
-<p>To run this sample execute the <code class="docutils literal"><span class="pre">sample/basic/basic_update_example.py</span></code> script
+<p>To run this sample execute the <code class="docutils literal notranslate"><span class="pre">sample/basic/basic_update_example.py</span></code> script
 as follows:</p>
 <blockquote>
-<div><div class="highlight-shell"><div class="highlight"><pre><span></span>python sample/basic/basic_update_example.py
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>python sample/basic/basic_update_example.py
 </pre></div>
 </div>
 </div></blockquote>
 <p>If the document was previously stored via running the <a class="reference internal" href="basicindexexample.html"><span class="doc">Basic Index Example</span></a>,
 the output should appear similar to the following:</p>
 <blockquote>
-<div><div class="highlight-shell"><div class="highlight"><pre><span></span>Response from update:
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Response from update:
 <span class="o">{</span>
     <span class="s2">&quot;_id&quot;</span>: <span class="s2">&quot;12345&quot;</span>,
     <span class="s2">&quot;_index&quot;</span>: <span class="s2">&quot;opendxl-elasticsearch-client-examples&quot;</span>,
@@ -130,7 +121,7 @@ Response from get:
 <p>If the document to be updated does not exist on the Elasticsearch server at the
 time the sample is run, the output should appear similar to the following:</p>
 <blockquote>
-<div><div class="highlight-shell"><div class="highlight"><pre><span></span>Requested document was not found on the server
+<div><div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>Requested document was not found on the server
 </pre></div>
 </div>
 </div></blockquote>
@@ -139,7 +130,7 @@ time the sample is run, the output should appear similar to the following:</p>
 <h2>Details<a class="headerlink" href="#details" title="Permalink to this headline">¶</a></h2>
 <p>The majority of the sample code is shown below:</p>
 <blockquote>
-<div><div class="highlight-python"><div class="highlight"><pre><span></span><span class="c1"># Create the client</span>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create the client</span>
 <span class="k">with</span> <span class="n">DxlClient</span><span class="p">(</span><span class="n">config</span><span class="p">)</span> <span class="k">as</span> <span class="n">dxl_client</span><span class="p">:</span>
 
     <span class="c1"># Connect to the fabric</span>
@@ -177,36 +168,36 @@ time the sample is run, the output should appear similar to the following:</p>
 </div>
 </div></blockquote>
 <p>Once a connection is established to the DXL fabric, a
-<a class="reference internal" href="dxlelasticsearchclient.client.html#dxlelasticsearchclient.client.ElasticsearchClient" title="dxlelasticsearchclient.client.ElasticsearchClient"><code class="xref py py-class docutils literal"><span class="pre">dxlelasticsearchclient.client.ElasticsearchClient</span></code></a> instance is created
+<a class="reference internal" href="dxlelasticsearchclient.client.html#dxlelasticsearchclient.client.ElasticsearchClient" title="dxlelasticsearchclient.client.ElasticsearchClient"><code class="xref py py-class docutils literal notranslate"><span class="pre">dxlelasticsearchclient.client.ElasticsearchClient</span></code></a> instance is created
 which will be used to invoke remote commands on the Elasticsearch DXL service.</p>
-<p>Next, the <a class="reference internal" href="dxlelasticsearchclient.client.html#dxlelasticsearchclient.client.ElasticsearchClient.update" title="dxlelasticsearchclient.client.ElasticsearchClient.update"><code class="xref py py-meth docutils literal"><span class="pre">dxlelasticsearchclient.client.ElasticsearchClient.update()</span></code></a>
-method is invoked with the <code class="docutils literal"><span class="pre">index</span></code>, type (<code class="docutils literal"><span class="pre">doc_type</span></code>), and <code class="docutils literal"><span class="pre">id</span></code> of the
-document to update. The call also includes a <code class="docutils literal"><span class="pre">dict</span></code> representing the portion
-of the document <code class="docutils literal"><span class="pre">body</span></code> to update.</p>
+<p>Next, the <a class="reference internal" href="dxlelasticsearchclient.client.html#dxlelasticsearchclient.client.ElasticsearchClient.update" title="dxlelasticsearchclient.client.ElasticsearchClient.update"><code class="xref py py-meth docutils literal notranslate"><span class="pre">dxlelasticsearchclient.client.ElasticsearchClient.update()</span></code></a>
+method is invoked with the <code class="docutils literal notranslate"><span class="pre">index</span></code>, type (<code class="docutils literal notranslate"><span class="pre">doc_type</span></code>), and <code class="docutils literal notranslate"><span class="pre">id</span></code> of the
+document to update. The call also includes a <code class="docutils literal notranslate"><span class="pre">dict</span></code> representing the portion
+of the document <code class="docutils literal notranslate"><span class="pre">body</span></code> to update.</p>
 <p>From the
 <a class="reference external" href="https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.update">Elasticsearch Python Update API</a>
 documentation:</p>
 <blockquote>
-<div><cite>“Update a document based on a script or partial data provided.”</cite></div></blockquote>
+<div><cite>&quot;Update a document based on a script or partial data provided.&quot;</cite></div></blockquote>
 <p>If the document to be updated does not exist on the Elasticsearch server at the
-time the sample is run, the <code class="docutils literal"><span class="pre">update</span></code> method will raise an
-<code class="xref py py-class docutils literal"><span class="pre">elasticsearch.exceptions.NotFoundError</span></code> exception. In this case, the
+time the sample is run, the <code class="docutils literal notranslate"><span class="pre">update</span></code> method will raise an
+<code class="xref py py-class docutils literal notranslate"><span class="pre">elasticsearch.exceptions.NotFoundError</span></code> exception. In this case, the
 sample catches the exception, displays an error message, and exits.</p>
 <p>If the document to be updated does exist on the Elasticsearch server at the
 time the sample is run, the next step is to display the contents of the
-returned dictionary (<code class="docutils literal"><span class="pre">dict</span></code>) which contains the results of the attempt to
+returned dictionary (<code class="docutils literal notranslate"><span class="pre">dict</span></code>) which contains the results of the attempt to
 update the document.</p>
 <p>To confirm that the document was updated properly, the
-<a class="reference internal" href="dxlelasticsearchclient.client.html#dxlelasticsearchclient.client.ElasticsearchClient.get" title="dxlelasticsearchclient.client.ElasticsearchClient.get"><code class="xref py py-meth docutils literal"><span class="pre">dxlelasticsearchclient.client.ElasticsearchClient.get()</span></code></a> method is invoked
+<a class="reference internal" href="dxlelasticsearchclient.client.html#dxlelasticsearchclient.client.ElasticsearchClient.get" title="dxlelasticsearchclient.client.ElasticsearchClient.get"><code class="xref py py-meth docutils literal notranslate"><span class="pre">dxlelasticsearchclient.client.ElasticsearchClient.get()</span></code></a> method is invoked
 to retrieve the information updated for the document. The method is invoked with
-the same <code class="docutils literal"><span class="pre">index</span></code>, type (<code class="docutils literal"><span class="pre">doc_type</span></code>), and <code class="docutils literal"><span class="pre">id</span></code> of the document used in the
-prior call to the <code class="docutils literal"><span class="pre">update</span></code> method.</p>
+the same <code class="docutils literal notranslate"><span class="pre">index</span></code>, type (<code class="docutils literal notranslate"><span class="pre">doc_type</span></code>), and <code class="docutils literal notranslate"><span class="pre">id</span></code> of the document used in the
+prior call to the <code class="docutils literal notranslate"><span class="pre">update</span></code> method.</p>
 <p>From the
 <a class="reference external" href="https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.get">Elasticsearch Python Get API</a>
 documentation:</p>
 <blockquote>
-<div><cite>“Get a typed JSON document from the index based on its id.”</cite></div></blockquote>
-<p>The final step is to display the contents of the returned dictionary (<code class="docutils literal"><span class="pre">dict</span></code>)
+<div><cite>&quot;Get a typed JSON document from the index based on its id.&quot;</cite></div></blockquote>
+<p>The final step is to display the contents of the returned dictionary (<code class="docutils literal notranslate"><span class="pre">dict</span></code>)
 which contains information for the updated document.</p>
 </div>
 </div>
@@ -242,12 +233,14 @@ which contains information for the updated document.</p>
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <div><input type="text" name="q" /></div>
-      <div><input type="submit" value="Go" /></div>
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -269,12 +262,12 @@ which contains information for the updated document.</p>
         <li class="right" >
           <a href="basicindexexample.html" title="Basic Index Example"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Elasticsearch API DXL Python Client Library 0.1.0 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Elasticsearch API DXL Python Client Library 0.2.0 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2017, McAfee LLC.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.4.
+        &#169; Copyright 2018, McAfee LLC.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.7.4.
     </div>
   </body>
 </html>

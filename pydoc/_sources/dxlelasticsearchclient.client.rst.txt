@@ -1,5 +1,5 @@
-dxlelasticsearchclient\.client module
-=====================================
+dxlelasticsearchclient.client module
+====================================
 
 .. automodule:: dxlelasticsearchclient.client
     :members:
