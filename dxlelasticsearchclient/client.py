@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import sys
 
 import elasticsearch.exceptions
@@ -52,7 +53,7 @@ class ElasticsearchClient(Client):
         self._dxl_client = dxl_client
         self._elasticsearch_service_unique_id = elasticsearch_service_unique_id
 
-    def delete(self, index, doc_type, id, **kwargs):
+    def delete(self, index, doc_type, id, **kwargs): # pylint: disable=invalid-name,redefined-builtin
         """
         Deletes a typed JSON document from a specific index based on its id.
         See the `Elasticsearch Python Delete API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.delete>`__
@@ -76,7 +77,7 @@ class ElasticsearchClient(Client):
 
         return self._invoke_service(self._REQ_TOPIC_DELETE, kwargs)
 
-    def get(self, index, doc_type, id, **kwargs):
+    def get(self, index, doc_type, id, **kwargs): # pylint: disable=invalid-name,redefined-builtin
         """
         Gets a typed JSON document from a specific index based on its id.
         See the `Elasticsearch Python Get API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.get>`__
@@ -100,7 +101,7 @@ class ElasticsearchClient(Client):
 
         return self._invoke_service(self._REQ_TOPIC_GET, kwargs)
 
-    def index(self, index, doc_type, body, id=None, **kwargs):
+    def index(self, index, doc_type, body, id=None, **kwargs): # pylint: disable=invalid-name,redefined-builtin
         """
         Adds or updates a typed JSON document from a specific index based on
         its id. See the `Elasticsearch Python Index API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.index>`__
@@ -126,7 +127,7 @@ class ElasticsearchClient(Client):
 
         return self._invoke_service(self._REQ_TOPIC_INDEX, kwargs)
 
-    def update(self, index, doc_type, id, body=None, **kwargs):
+    def update(self, index, doc_type, id, body=None, **kwargs): # pylint: disable=invalid-name,redefined-builtin
         """
         Update a document based on a script or partial data provided. See the
         `Elasticsearch Python Update API <https://elasticsearch-py.readthedocs.io/en/master/api.html#elasticsearch.Elasticsearch.update>`__
