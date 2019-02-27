@@ -199,8 +199,7 @@ class ElasticsearchClient(Client):
             else:
                 exception = exception_class()
             raise exception
-        else:
-            raise ValueError("Unknown class in response")
+        raise ValueError("Unknown class in response")
 
     def _invoke_service(self, request_method, request_dict):
         """
